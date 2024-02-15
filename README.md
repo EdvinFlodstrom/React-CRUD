@@ -1,0 +1,11 @@
+Journal
+=======
+This is a tutorial project. It follows the instructions of the following two links:
+* https://www.c-sharpcorner.com/article/net-core-3-1-web-api-crud/
+* https://www.c-sharpcorner.com/article/reactjs-crud-using-net-core-web-api/
+
+2024-02-15
+-----------
+Never in my life have I struggled so much with setting up a Git repository, and I do not know why or what exactly happened. I ran 'git init' as usual, and somehow, perhaps I accidentally did it in the wrong folder first, Git had been initialized in a subfolder as well. I got it fixed by running 'git rm --cached react-crud -f', but that was only the beginning. After this, I initialized Git in the project root and added the repository on GitHub as a remote origin. As usual, in other words. I then added all the files and committed them. Around the same time, I also fetched the changes (adding the README.md file) from the repository on GitHub. I don't know what went wrong where, but nothing was working. The GitHub repository didn't update (the commit didn't appear), my local folder didn't update (the README.md file didn't appear), and I could not for the life of me figure out what was going on. I tried reverting the commit by going back to a previous version, but that seemed to accomplish nothing despite a successful status message. I tried committing and fetching several times with no progress. After over half an hour of pointless debugging, I simply removed the '.git' folder and initialized it again. Within three minutes, everything was working. I wish I knew what went wrong, but alas, I do not. What I do know, however, is that I will make *absolutely certain* that I run the correct commands at the correct time in the correct place next time. Debugging this was not fun. At all.
+
+Anyhow before the events above transpired, I set up the frontend and backend projects, and the SQL database. It didn't go *too* well, but it might work, I suppose... It's all been a load of debugging and annoyance, so I hope the project will be more fun moving on.
