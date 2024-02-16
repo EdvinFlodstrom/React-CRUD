@@ -18,4 +18,8 @@ git add .
 git commit -m "Project initialized"
 git push -u origin main
 ```
-And it worked. For real this time, because I actually *followed exact instructions like I should have from the beginning*. I was trying to do it from my memory, and I suppose I got the things mixed up or something. Regardless, I think I've learned a lesson or two from this all. The repository is up, my changes are updated, and my sanity is restored.
+And it worked. For real this time, because I actually *followed exact instructions like I should have from the beginning*. I was trying to do it from my memory, and I suppose I got the things mixed up or something. Regardless, I think I've learned a lesson or two from all this. The repository is up, my changes are updated, and my sanity is restored.
+
+2024-02-16
+-----------
+Apparently one of the packages, Microsoft.AspNetCore.Mvc.NewtonsoftJson, isn't compatible with .NET version 8, the one I created the project with. From what I can tell, the tutorial project seems a bit outdated, recommending .NET Core 3.1. I really don't feel like spending a lot of time trying to figure out which versions are compatible and recommended for each other, especially with the tutorial instructions being so vague as well. So, for now, I'm going to abandon this project as is, an initialized template of an empty API.

@@ -16,9 +16,9 @@ public class Startup
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
-        //services.AddScoped<IDepartmentRepository, DepartmentRepository>();
-        //services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-        //services.AddDbContext<APIDbContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("EmployeeAppCon")));
+        services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+        services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+        services.AddDbContext<APIDbContext>(options => options.UseSqlServer(Environment.GetEnvironmentVariable("EmployeeAppCon")));
         services.AddSwaggerGen(options => {
             options.SwaggerDoc("v1", new OpenApiInfo
             {
